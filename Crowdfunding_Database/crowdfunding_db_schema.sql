@@ -7,7 +7,7 @@ CREATE TABLE Contacts (
     contact_id INT PRIMARY KEY,
     first_name VARCHAR(15),
     last_name VARCHAR(15),
-    email VARCHAR(40)
+    email VARCHAR(100)
 );
 
 -- Create Category table
@@ -26,11 +26,11 @@ CREATE TABLE Subcategory (
 CREATE TABLE Crowdfunding (
     cf_id INT PRIMARY KEY,
     contact_id INT,
-    company_name VARCHAR(30),
-    blurb VARCHAR(50),
+    company_name VARCHAR(100),
+    blurb VARCHAR(100),
     goal INT,
     pledged INT,
-    outcome INT,
+    outcome VARCHAR(20),
     backers_count INT,
     country VARCHAR(30),
     currency VARCHAR(15),
